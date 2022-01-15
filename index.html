@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./assets/media/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-    <video controls autoplay>
-        <!-- <source src="./assets/media/Así debió ser el estribillo final de Entre Nosotros RMX. (320 kbps).mp3"/> -->
-        <source src="./assets/media/longvideo.mp4" crossorigin="anonymous"/>
-
+    <audio>
+        <source src="./assets/media/CA7RIEL - Polvo (128 kbps).mp3"/>
+        <!-- <source src="./assets/media/longvideo.mp4" crossorigin="anonymous"/> -->
         <track kind="subtitles" label="English subtitles" src="./assets/media/lyrics.vtt" srclang="es" default> 
-    </video>
-    <div class="play">Play</div>
-    <div class="stop">Stop</div>
+    </audio>
+    <h1>Polvo. Ca7triel</h1>
+    <div class="controls">
+        <div class="play"><span class="material-icons icon">
+            play_circle_outline
+            </span></div>
+        <div class="stop"><span class="material-icons icon">
+            stop
+            </span></div>
+    </div>
+    <figure>
+        <img src="./assets/media/moth.png" alt="">
+    </figure>
+    <p id="display"></p>
 </body>
 </html>

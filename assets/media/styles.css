@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(10, 10, 10);
+    font-family: monospace;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: url('./cursor.png') auto;
+    transition: background 1s linear;
+}
+h1{
+    color: whitesmoke;
+    font-size: 4rem;
+}
+.color{
+
+    animation: color .2s linear infinite;
+}
+
+@keyframes color{
+    from{ background: rgb(10, 10, 10);}
+    to { background:#a83af2d0 ;}
+}
+img{
+    filter: drop-shadow(0 0 .5rem #a83af283);
+    height: 18rem;
+    width: 20rem;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 1s linear;
+}
+.move{
+    animation: move .13s infinite linear;
+}
+@keyframes move {
+    0%{transform: rotate(0);}
+    25%{transform: rotate(-15deg);}
+    50%{transform: rotate(0);}
+    100%{transform: rotate(15deg);}
+}
+#display{
+    margin: 0 auto;
+    height: 7rem;
+}
+.linea1{
+    width: 32ch;
+}
+.linea2{
+    width: 36ch;
+}
+.linea3{
+    width: 34ch;
+}
+.linea4{
+    width: 32ch;
+}
+.linea5{
+    width: 28ch;
+}
+.linea6{
+    width: 35ch;
+}
+.linea7{
+    width: 30ch;
+}
+.linea8{
+    width: 30ch;
+}
+.linea9{
+    width: 32ch;
+}
+.linea10{
+    width: 26ch;
+}
+.linea11{
+    width: 30ch;
+}
+.linea12{
+    width: 27ch;
+}
+.linea13{
+    width: 30ch;
+}
+.linea14{
+    width: 28ch;
+}
+.linea15{
+    width: 35ch;
+}
+.linea16{
+    width: 24ch;
+}
+.linea17{
+    width: 27ch;
+}
+.linea18{
+    width: 30ch;
+}
+/* color: #a83af2cb; */
+/* text-shadow: 0 0 1rem #a83af2ab, 0 0px 3rem #a83af291, 0 0px 10rem #a83af267; */
+
+.red{
+    box-sizing: content-box;
+    color: #e9d06b;
+    text-shadow: 0 0 .5rem #f2cd3a, 0 0px 1rem #f2cd3a, 0 0px 2rem #f2cd3a, 0 0px 3rem #f2cd3a;
+    animation: lyrics 2s steps(32);
+    font-size: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+
+}
+.controls{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.play,.stop{
+    color:#f2cd3a;
+}
+/* .red{
+    box-sizing: border-box;
+    width: 32ch;
+    white-space: nowrap;
+    font-family: monospace;
+    font-size: 10rem;
+    display: block;
+    color: aliceblue;
+    animation: typying 4s steps(17) infinite alternate-reverse, blink .5s infinite;
+    overflow: hidden;
+    border-right: solid .5rem;
+} */
+@keyframes lyrics {
+     from{width: 0%;}    
+}
+
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    .red{
+        font-size: 1.2rem;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .red{
+        font-size: 1.5rem;
+    }
+}
