@@ -148,14 +148,17 @@ img{
 }
 
   /* Media Query for Mobile Devices */
-  @media (max-width: 480px) {
+  @media (max-width: 500px) {
     .red{
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
     }
 }
   
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 501px) and (max-width: 767px) {
     .red{
         font-size: 1.5rem;
     }
