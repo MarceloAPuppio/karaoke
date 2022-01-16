@@ -33,7 +33,7 @@ h1{
     100%{background:#05bcff ;}
 }
 .img{
-    filter: drop-shadow(0 0 .8rem #ff0561de);
+    filter: drop-shadow(0 0 .8rem #05bcffd0);
     height: 200px;
     width: 200px;
     background-image: url('./sprite.png');
