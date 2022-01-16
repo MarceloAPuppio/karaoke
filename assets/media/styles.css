@@ -15,9 +15,10 @@ body{
     align-items: center;
     cursor: url('./cursor.png') auto;
     transition: background 1s linear;
+
 }
 h1{
-    color: whitesmoke;
+    color: #05bcff;
     font-size: 4rem;
 }
 .color{
@@ -26,17 +27,19 @@ h1{
 }
 
 @keyframes color{
-    from{ background: rgb(10, 10, 10);}
-    to { background:#a83af2d0 ;}
+    0%{ background: rgb(10, 10, 10);}
+    33% { background:#ff0561de ;}
+    66%{background:#ffd105 ;}
+    100%{background:#05bcff ;}
 }
-img{
-    filter: drop-shadow(0 0 .5rem #a83af283);
-    height: 18rem;
-    width: 20rem;
-    object-fit: contain;
-    object-position: center;
-    transition: transform 1s linear;
+.img{
+    filter: drop-shadow(0 0 .8rem #ff0561de);
+    height: 200px;
+    width: 200px;
+    background-image: url('./sprite.png');
+    background-position: 0px;
 }
+.fly{animation:  fly .15s steps(6) infinite alternate;}
 .move{
     animation: move .13s infinite linear;
 }
@@ -45,6 +48,11 @@ img{
     25%{transform: rotate(-15deg);}
     50%{transform: rotate(0);}
     100%{transform: rotate(15deg);}
+}
+@keyframes fly{
+    to{
+        background-position: 1200px;
+    }
 }
 #display{
     margin: 0 auto;
@@ -109,7 +117,7 @@ img{
 
 .red{
     box-sizing: content-box;
-    color: #e9d06b;
+    color: #ffd105;
     text-shadow: 0 0 .5rem #f2cd3a, 0 0px 1rem #f2cd3a, 0 0px 2rem #f2cd3a, 0 0px 3rem #f2cd3a;
     animation: lyrics 2s steps(32);
     font-size: 3rem;
@@ -129,7 +137,7 @@ img{
     gap: 2rem;
 }
 .play,.stop{
-    color:#f2cd3a;
+    color:#ffd105;
 }
 /* .red{
     box-sizing: border-box;

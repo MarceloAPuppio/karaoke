@@ -10,13 +10,13 @@ document.body.addEventListener('dblclick',(e)=>{audio.pause()})
 audio.textTracks[0].addEventListener('cuechange', function() {
     document.getElementById('display').innerHTML = this.activeCues[0].text;
     if(this.activeCues[0].text==""){
-        document.querySelector('img').classList.add("move")
+        document.querySelector('.img').classList.add("fly")
         document.body.classList.add("color")
     } 
         
     else{
         document.body.classList.remove("color")
-        document.querySelector('img').classList.remove("move")
+        document.querySelector('.img').classList.remove("fly")
         
     } 
 
