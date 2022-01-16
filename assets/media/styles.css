@@ -39,7 +39,7 @@ h1{
     background-image: url('./sprite.png');
     background-position: 0px;
 }
-.fly{animation:  fly .15s steps(6) infinite alternate;}
+.fly{animation:  fly .1s steps(6) infinite alternate;}
 .move{
     animation: move .13s infinite linear;
 }

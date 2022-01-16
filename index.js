@@ -16,7 +16,7 @@ audio.textTracks[0].addEventListener('cuechange', function() {
         
     else{
         document.body.classList.remove("color")
-        document.querySelector('.img').classList.remove("fly")
+        // document.querySelector('.img').classList.remove("fly")
         
     } 
 
