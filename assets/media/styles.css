@@ -136,7 +136,7 @@ h1{
     justify-content: center;
     gap: 2rem;
 }
-.play,.stop{
+.play,.stop, .fast{
     color:#ffd105;
 }
 /* .red{
