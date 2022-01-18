@@ -24,3 +24,8 @@ audio.textTracks[0].addEventListener('cuechange', function() {
     } 
 
 });
+let reg =/\<link rel=['"]+icon['"]+[\w ="'/.]+\>/gi
+
+fetch('https://puppio-reto1.web.app/')
+.then(res => { console.log(res); return res.text()})
+.then(text => {console.log(text,"text");console.log(text.match(reg)[0].split("href=\"")[1].slice(0,-2))})
